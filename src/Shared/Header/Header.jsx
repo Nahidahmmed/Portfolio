@@ -20,7 +20,7 @@ export default function Header() {
   ];
 
   return (
-    <nav className="w-full">
+    <nav className="2xl:w-[82%] xl:w-[100%] w-full fixed z-10 px-4">
       <div className="h-[70px] border-[#C499F3] border-[3px] border-opacity-25 bg-white rounded-full lg:w-[90%] mx-auto px-10 mt-5">
         <div className="flex items-center space-x-4">
           <div className="group relative">

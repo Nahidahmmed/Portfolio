@@ -5,10 +5,8 @@ import Header from "../Shared/Header/Header";
 
 export default function Layout() {
   return (
-    <div className="min-h-screen">
-        <div className="fixed z-10 w-full">
+    <div className="min-h-screen max-w-screen-2xl mx-auto">   
         <Header></Header>
-        </div>
         <Outlet></Outlet>
         <Foother></Foother>
     </div>
