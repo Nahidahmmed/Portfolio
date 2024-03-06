@@ -1,5 +1,6 @@
 import image from "../../assets/logo/image2.jpg";
-
+import { HiOutlineDownload } from "react-icons/hi";
+import { FaEye } from "react-icons/fa6";
 export default function Welcome() {
   return (
     <div className="lg:flex-row-reverse md:flex-row-reverse md:flex w-full lg:px-[10%] md:pt-[15%] pt-[45%] h-screen">
@@ -18,9 +19,9 @@ export default function Welcome() {
           I'm a web developer based in Bangladesh, specializing in cutting-edge
           web and mobile technologies as well as pixel-perfect designs.
         </p>
-        <div>
-          <button>resume</button>
-          <button>resume</button>
+        <div className="flex my-5">
+          <button className="flex items-center pl-3 pr-4 py-2 border-[#dddde0] border-2 rounded-s-full text-[#9860d4] font-semibold text-lg uppercase"><HiOutlineDownload className="mx-2"/> Resume</button>
+          <button className="flex items-center pl-3 pr-4 py-2 border-[#dddde0] border-y-2 border-r-2 rounded-e-full text-[#9860d4] font-semibold text-lg uppercase"><FaEye className="mr-2"/> Resume</button>
         </div>
         <div>social links in Icons</div>
       </div>
