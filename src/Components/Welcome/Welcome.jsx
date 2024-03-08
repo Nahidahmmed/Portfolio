@@ -1,7 +1,10 @@
 import image from "../../assets/logo/image2.jpg";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaEye } from "react-icons/fa6";
+
 export default function Welcome() {
+  // const { Mode, toggleTheme } = useContext(ThemeContext);
+
   return (
     <div className="lg:flex-row-reverse md:flex-row-reverse md:flex w-full lg:px-[10%] md:pt-[15%] pt-[45%] h-screen">
         <div className="w-full lg:w-[50%] md:w-[50%] relative">

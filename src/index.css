@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    @apply transition-colors duration-300;
+}
+
+.dark {
+    background-color: #1a202c;
+    color: #ffffff;
+  }
+  
+  .light {
+    background-color: #ffffff;
+    color: #000000;
+  }

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo/_d3ca59bf-275a-4f0b-b28c-0c73d53ed179_prev_ui.png";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +20,12 @@ export default function Header() {
     { path: "/about", label: "About" },
   ];
 
+  // const { Mode, toggleTheme } = useContext(ThemeContext);
+  
+
   return (
     <nav className="w-full">
-      <div className="2xl:w-[82%] xl:w-[100%] w-full fixed z-10 px-4">
+      <div className="2xl:w-[100%] xl:w-[100%] w-full fixed z-10 px-4 mx-auto">
         <div className="h-[60px] border-[#C499F3] border-[3px] border-opacity-25 bg-white rounded-full lg:w-[90%] mx-auto 2xl:px-10 xl:px-10 lg:px-10 md:px-10 px-5 mt-5">
           <div className="flex items-center space-x-4">
             <div className="group relative">
@@ -53,10 +57,10 @@ export default function Header() {
             </ul>
           </div>
 
-          <div className="text-xl lg:pr-2 flex items-center"></div>
+         
         </div>
       </div>
-        {/* mobile btn */}
+      {/* mobile btn */}
       <div className="button-container w-full flex fixed bottom-0 md:hidden lg:hidden xl:hidden">
         <button className="mobile_nav_button">
           <svg
